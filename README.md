@@ -30,7 +30,7 @@ To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow 
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're a seasoned developer or just getting started, your ideas and skills can make a difference. Please review our [Contributing Guidelines](CONTRIBUTING.md) to learn how to contribute to this repository.
+We welcome contributions from the community! Whether you're a seasoned developer or just getting started, your ideas and skills can make a difference. Please review our [Contributions.md](https://github.com/hack2skill/NASA-Space-Apps-Noida/blob/main/Contributions.md) to learn how to contribute to this repository.
 
 ## Community
 
