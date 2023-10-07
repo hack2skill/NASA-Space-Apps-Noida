@@ -13,3 +13,17 @@ The NASA Space Apps Challenge is a hackathon that brings together enthusiasts, i
 - ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/hack2skill/NASA-Space-Apps-Noida)
 - ![GitHub Forks](https://img.shields.io/github/forks/hack2skill/NASA-Space-Apps-Noida)
 - ![GitHub Stars](https://img.shields.io/github/stars/hack2skill/NASA-Space-Apps-Noida)
+
+## Community
+
+Stay connected with Hack2Skill and the NASA Space Apps Noida Hackathon 2023:
+
+- [Hack2Skill Website](https://www.hack2skill.com)
+- [Follow us on Twitter](https://twitter.com/hack2skill)
+- [Follow us on Instagram](https://www.instagram.com/hack2skill/)
+- [LinkedIn](https://www.linkedin.com/company/hack2skill)
+
+Join our growing community, and let's collaborate to solve NASA's challenges!
+
+Thank you for being a part of the NASA Space Apps Noida Hackathon 2023. We look forward to your contributions and innovative solutions! 🚀🛰️
+
