@@ -2,6 +2,8 @@
 
 Welcome to the official repository for the NASA Space Apps Noida Hackathon 2023 organized by Hack2Skill!
 
+![image](https://github.com/hack2skill/NASA-Space-Apps-Noida/assets/38598925/16220257-7ab2-42b9-818a-2dd88f697c3d)
+
 ## Getting Started
 
 To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow these steps:
@@ -28,5 +30,5 @@ To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow 
 ### Step-by-Step Code Execution Instructions:
   This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
   
-### What I Learned:
-   Write about the biggest learning you had while developing the prototype
+### Future Scope:
+   Write about the scalability and futuristic aspects of the prototype developed
