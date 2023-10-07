@@ -24,7 +24,7 @@ The NASA Space Apps Challenge is a hackathon that brings together enthusiasts, i
 To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/hack2skill/nasa-space-apps-noida-2023.git`
-2. Follow the format and instructions provided in Contributions.md
+2. Follow the format and instructions provided in [Contributions.md](https://github.com/hack2skill/NASA-Space-Apps-Noida/blob/main/Contributions.md)
 3. Fork the repository and create a new branch for your work.
 4. Make your changes and submit a pull request to contribute to the hackathon projects.
 
