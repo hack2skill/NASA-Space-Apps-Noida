@@ -1,27 +1,15 @@
-# NASA Space Apps Noida Hackathon 2023 - Hack2Skill
+#### Team Name - Team Stellars
+#### Problem Statement - What’s Up With This Water?
+#### Team Leader Email - bhatnagarkartik6@gmail.com
 
-Welcome to the official repository for the NASA Space Apps Noida Hackathon 2023 organized by Hack2Skill!
+#### Prototype Website URL:- https://whater989.000webhostapp.com/
 
-## Getting Started
-
-To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow these steps:
-
-### Submission Instruction:
-  1. Fork this repository
-  2. Create a folder with your Team Name
-  3. Upload all the code and necessary files in the created folder
-  4. Upload a **README.md** file in your folder with the below mentioned informations.
-  5. Generate a Pull Request with your Team Name. (Example: submission-XYZ_team)![Uploading 13010.jpg…]()
-
-
-### README.md must consist of the following information:
-
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+Our Prototype "HYDRA HEALTH" Front Page
 
 ### A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
+ Our app first takes user's location using geoloaction module of js.
+ ![WhatsApp Image 2023-10-08 at 4 59 30 AM](https://github.com/mediachain/mediachain-website/assets/72219613/8863abdf-d0c3-4a27-be7f-8394876d8191)
+
   
 ### Tech Stack: 
    List Down all technologies used to Build the prototype
