@@ -4,7 +4,9 @@
 
 #### Prototype Website URL:- https://whater989.000webhostapp.com/
 
+![ezgif com-video-to-gif](https://github.com/mediachain/mediachain-website/assets/72219613/2b06670b-55a9-43c3-a06a-2f6f16d3d4fd)
 Our Prototype "HYDRA HEALTH" Front Page
+
 
 ### A Brief of the Prototype:
  Our app first takes user's location using geoloaction module of js.
