@@ -15,15 +15,15 @@ To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow 
 
 ### README.md must consist of the following information:
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+#### Team Name - H2O FLOW
+#### Problem Statement - EVERYTHING STARTS WITH WATER
+#### Team Leader Email - vs4440229@gmail.com
 
 ### A Brief of the Prototype:
   This section must include UML Diagrams and prototype description
   
 ### Tech Stack: 
-   List Down all technologies used to Build the prototype
+   HTML CSS JAVASCRIPT
    
 ### Step-by-Step Code Execution Instructions:
   This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
