@@ -1,0 +1,162 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  #mainn{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow:hidden ;
+    display: flex;
+  }
+  #mainn>img{
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+  }
+  
+  #orbit{
+    position: absolute;
+    left: -50vw;
+    top: -22vh;
+    height: 150vh;
+    width: 100vw;
+    border-radius: 50%;
+    background-color: transparent;
+    /* border: 2px solid gray; */
+    display: flex;
+    align-items:center ;
+    justify-content:center;
+    overflow: hidden;
+  }
+  #sun>img{
+    height: 90%;
+    width: 90%;
+  }
+  
+  #eorbit{
+    position: absolute;
+    height: 32vh;
+    width: 16vw;
+  
+    background-color: transparent;
+    border-radius: 50%;
+    /* border: 2px solid gray; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  #earth>img{
+    height: 19vh;
+    width: 10vw;
+  }
+  
+  /* #earth-angle-slider, #moon-angle-slider{
+    position: absolute;
+    bottom: 2vh;
+  }
+  #earth-angle-slider{
+    left: 30vw;
+  }
+  
+  #moon-angle-slider{
+    left: 40vw;
+  } */
+  #sliders{
+    display: flex;
+    position: absolute;
+    bottom: 2vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+  }
+  label{
+    color: white;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+  }
+  
+  #moon{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+  }
+  
+  #moon>img{
+    height: 6vh;
+    width: 3vw;
+  }
+  #horizon {
+    position: absolute;
+    background-color: white; /* Set the background color to white */
+    width: 100%; /* Make it as wide as the screen */
+    height: 2px; /* Adjust the height as needed */
+    top: 50%; /* Position it vertically at the center */
+    left: 0; /* Align it to the left edge of the screen */
+    transform: translateY(-50%); /* Center it vertically */
+    z-index: -1; /* Ensure it's above other elements */
+  }
+  
+  #random-facts {
+    width: 30rem;
+    height: 20rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    bottom: 0vh;
+    right: 0vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #random-facts:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+  }
+  .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+  }
+  .buttons > button{
+    transition: all .5s ease;
+      color: #fff;
+      border: 3px solid white;
+      font-family:'Montserrat', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1;
+      font-size: 17px;
+      background-color : transparent;
+      padding: 10px;
+      outline: none;
+      border-radius: 4px;
+      width: 100%;
+  }
+  .buttons>button:hover{
+    color: #001F3F;
+    background-color: #fff;
+  }

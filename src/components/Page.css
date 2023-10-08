@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* display: flex; */
+  /* background-color: #000; */
+}
+
+#page1 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* filter: blur(2px); */
+  position: absolute;
+  z-index: -100;
+  bottom: 0;
+  left: 0;
+}
+
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* -webkit-box-shadow: -1px 21px 50px 7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -1px 21px 50px 7px rgba(0, 0, 0, 1);
+  box-shadow: -1px 21px 50px 7px rgba(0, 0, 0, 1); */
+}
+#content {
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+}
+
+#header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#navbar{
+  position: fixed;
+  width: 40%;
+  height: 6vh;
+  border-radius: 50px;
+  background-color: #000;
+  top:4vh;
+  left: 32vw;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  padding: 1vh 3vw;
+  z-index: 100;
+  gap: 2.5vw;
+  transition: all 150ms ease-in-out;
+}
+#navbar>a{
+  color: #fff;
+  text-decoration: none;
+  /* background-color: red; */
+  padding: 1vh 2vw;
+  border-radius: 50px;
+  text-align: center
+  
+}
+#navbar>a:hover{
+  color: #000;
+  background-color: #fff
+}
+#header>p{
+  color: White;
+  font-family: "Exo 2",sans-serif;
+  font-size: 1vw;
+  text-align:start ;
+  margin-top: 8vh;
+  margin-left: 5.5vw;
+}
+#header > h1 {
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+#btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 20%;
+}
+
+#btn  button {
+  padding: 3vh 5vw;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  /* background-color: transparent; */
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+#btn > button:hover {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  /* background: rgb(102, 11, 39);
+  background: linear-gradient(
+    0deg,
+    rgba(102, 11, 39, 1) 0%,
+    rgba(102, 11, 39, 1) 25%,
+    rgba(0, 0, 0, 1) 100% */
+  /* ); */
+  /* -webkit-box-shadow: -1px -14px 50px 7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -1px -14px 50px 7px rgba(0, 0, 0, 1);
+  box-shadow: -1px -14px 50px 7px rgba(0, 0, 0, 1); */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+#fact {
+  width: 100%;
+  height: 35%;
+  background-color: #000;
+}
+#head {
+  height: 20%;
+  width: 60%;
+  text-align: start;
+}
+#head > h1 {
+  color: #ffffff;
+  font-family: "Exo2", sans-serif;
+  font-size: 1.6vw;
+  font-weight: 300;
+  padding: 4vh 3vw;
+}
+#annural,
+#total {
+  width: 80%;
+  position: relative;
+  height: 35%;
+  /* background-color: aqua; */
+  margin-left: 2vw;
+}
+#total {
+  position: relative;
+  bottom: -4vh;
+}
+#annural {
+  bottom: -3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-style: solid none none none;
+}
+#annui {
+  height: 60px;
+  width: 60px;
+  margin-left: 2vw;
+  overflow: hidden;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#annui > img {
+  height: 100%;
+  width: 100%;
+}
+#annut {
+  width: 90%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#annusmall {
+  width: 40%;
+  margin-right: 2vw;
+  color: #ffffff;
+}
+#total {
+  bottom: -3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-style: solid none none none;
+}
+#totali {
+  height: 60px;
+  width: 60px;
+  margin-left: 2vw;
+  overflow: hidden;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#totali > img {
+  height: 100%;
+  width: 100%;
+}
+#tott {
+  width: 90%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#totsmall {
+  width: 40%;
+  margin-right: 2vw;
+  color: #ffffff;
+}
+#ss {
+  height: 75%;
+  width: 95%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+#vr,
+#sim {
+  width: 46%;
+  height: 75%;
+  border: 2px solid black;
+  /* background-color: blue; */
+}
+
+#vrh,
+#simh {
+  height: 65%;
+  width: 85%;
+  /* background-color: black; */
+  margin: auto;
+  margin-top: 5vh;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#vrh > img,
+#simh > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 250ms ease-in-out;
+}
+
+#vrh:hover img,
+#simh:hover img{
+  object-fit: cover;
+  height: 120%;
+  width: 120%;
+}
+#vr > h1,
+#sim > h1 {
+  color: #000;
+  text-align: center;
+  margin-top: 2vh;
+  font-family: "Exo 2", sans-serif;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}

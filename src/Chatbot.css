@@ -1,0 +1,30 @@
+.top{
+    border: 1px solid black;
+    height: 50vh;
+    width: 90%;
+    margin: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.top>h1{
+    padding-bottom: 30px;
+}
+.top>input{
+    height: 50px;
+    width: 400px;
+}
+.top>button{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 90px;
+    height: 50px;
+}
+.top>button:hover{
+    background-color: black;
+    color: white;
+}
+
+  
+ 
