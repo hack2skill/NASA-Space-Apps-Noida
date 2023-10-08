@@ -45,4 +45,3 @@ HTML,CSS -> It is used to create and style the web page
 ### Future Scope:
    To make our webapp more interacting and amazing, we are going to implement 3d models using three.js where we can interact 3d elements and find endangered water  
    species based on water bodies near the user. We can also add a GEOLOCATION Machine Learning model to show the water quality of region which is under rainfall and fluctuating pollution level.
-   pollution level
