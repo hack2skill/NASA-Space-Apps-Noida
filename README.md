@@ -15,18 +15,24 @@ To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow 
 
 ### README.md must consist of the following information:
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+#### Team Name - Taem Infamous
+#### Problem Statement - Everything starts with water
+#### Team Leader Email - yashverma612003@gmail.com
 
 ### A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
+  we developed an interactive model to tell students the importance of water on our planet earth .
+We also developed and AR model of how moon's gravity affects earth's tides and  climate changes and its water cycles/.
+we developed a quiz in which students will see pictures related to the water cycle system and then attempt the quiz , and the result will be shown on the basis of the no. of correct answers.
   
 ### Tech Stack: 
-   List Down all technologies used to Build the prototype
+   HTML
+   CSS
+   Javascript
+   Blender
    
 ### Step-by-Step Code Execution Instructions:
-  This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
+  First run the first.html then it will direct you to quiz interface.
   
 ### Future Scope:
-   Write about the scalability and futuristic aspects of the prototype developed
+   To fetch live data using nasa satellites and nasa daatseet about all the rivers, ocean and other water bodies present on earth.
+Main focus would be on the idea of fetching data about the garbage clusters in the water bodies and preventing the river or small lakes from dying or being cluttered.
