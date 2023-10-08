@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Garden</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Font+Here&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Your Font Here', sans-serif;
+            overflow: hidden;
+        }
+
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+        }
+
+        #title {
+            font-size: 100px;
+            font-weight: 600;
+            transition: 0.5s;
+            margin-bottom: 20px;
+        }
+
+        #title:hover {
+            -webkit-text-stroke: 2px #fff;
+            color: transparent;
+        }
+
+        #down-arrow-btn {
+    text-decoration: transparent;
+    display: inline-block;
+    color: #fff;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid transparent;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+        #ocean-text {
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.6;
+        }
+
+        #amazing-facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .fact {
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        .fact img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 150px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 150px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="atlantis.png" class="logo">
+        <ul>
+            <li><a href="quiz.html" target="_blank">QUIZ</a></li>
+            <li><a href="contact.html" target="_blank">Contact us</a></li>
+            <li><a href="https://www.spaceappschallenge.org/2023/challenges/ocean-gardens/" target="_blank">Nasa space apps </a></li>
+           
+        </ul>
+    </nav>
+
+    <div id="video-container">
+        <video autoplay muted loop>
+            <source src="video (1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+       
+    </div>
+
+    <div id="content">
+        
+        <h1 id="title" onclick="scrollToOceanText()">Ocean Garden</h1>
+        <button id="down-arrow-btn" onclick="scrollToOceanText()">⮟</button>
+    </div>
+
+    <div id="ocean-text">
+        
+    </div>
+
+    <div id="amazing-facts">
+        <div class="fact">
+           <a href="overfishing.html"> <img src="wallpaperflare.com_wallpaper.jpg" alt="Ocean Image 1" target="_blank"></a>
+           <p><strong>1: HUMANS ARE DESTROYING OCEANS--Human activities, like overfishing and pollution, are rapidly deteriorating our oceans. Climate change exacerbates these issues, posing a severe threat to marine life and ecosystems. Urgent global efforts are essential to mitigate these destructive impacts and protect our oceans.</strong></p>
+
+        </div> 
+
+        <div class="fact">
+            <a href="sustainability.html"><img src="pxfuel (1).jpg" alt="Ocean Image 2" target="_blank"></a>
+            <p><strong> Conservation:
+                Promoting sustainable practices and reducing pollution are essential for preserving our planet's health.
+                
+                Climate Action:
+                Mitigating climate change impacts through collective efforts ensures a more sustainable and resilient future.
+                
+                Global Collaboration:
+                Fostering international cooperation is crucial for addressing environmental challenges and achieving sustainable development goals.</strong></p>
+        </div>
+        <div class="fact">
+           <a href="ad,dis.html"> <img src="pxfuel (3).jpg" alt="Ocean Image 3" target="_blank"></a>
+            <p><strong>3:Advantage and Disadvantages of  ocean ecosystem---Resource Harvesting: Humans benefit from the ocean's resources, such as fisheries and minerals, providing sustenance and economic opportunities.
+                Disadvantages:
+                2. Overexploitation: Unregulated fishing and resource extraction can lead to overexploitation, threatening marine ecosystems and biodiversity.
+                
+                Pollution Impact: Human activities contribute to ocean pollution through waste disposal and industrial runoff, harming marine life and ecosystems.</strong></p>
+        </div>
+        <div class="fact">
+            <a href="impact.html"><img src="great-cormorant-7536603_1920.jpg" alt="Ocean Image 4" target="_blank"></a>
+            <p><strong>4:As excess debris in the ocean slowly degrades over many years, it uses oxygen to do so, resulting in less oxygen in the ocean. Low levels of oxygen in the ocean lead to the death of ocean animals such as penguins, dolphins, whales and sharks. Excess nitrogen and phosphorus in seawater also cause oxygen depletion.</strong> </p>
+        </div>
+        
+    </div>
+        
+   
+
+    <script>
+        function scrollToOceanText() {
+            document.getElementById('ocean-text').scrollIntoView({ behavior: 'smooth' });
+        
+       
+        }
+    </script>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Your Font Here', sans-serif;
+    overflow-y: auto; /* Change 'hidden' to 'auto' to enable scrolling */
+    ::-webkit-scrollbar-thumb{
+    background:linear-gradient(#642bff,#ff22e6);
+    }
+}
+    </style>
+     
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif;
+}
+.hero{
+    width:100%;
+    height:100vh;
+    background-color: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Your Font Here', sans-serif;
+    overflow: hidden;
+}
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+}
+
+.title h1 {
+font-size: 100px;
+font-weight: 600;
+transition: 0.5s;
+margin-bottom: 20px;
+}
+
+.title h1:hover {
+-webkit-text-stroke: 2px #fff;
+color: transparent;
+}
+#down-arrow-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#ocean-text {
+    max-width: 800px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+#amazing-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.fact {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+.fact img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
