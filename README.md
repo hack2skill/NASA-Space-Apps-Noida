@@ -1,8 +1,8 @@
 # NASA Space Apps Noida Hackathon 2023 - Hack2Skill
 
-Team Name - Team Trident
-Problem Statement - Titan City, 3023
-Team Leader Email - ankitchoubey110@gmail.com
+### Team Name - Team Trident
+### Problem Statement - Titan City, 3023
+### Team Leader Email - ankitchoubey110@gmail.com
 
 A Brief of the Prototype:
 
