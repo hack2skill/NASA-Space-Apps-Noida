@@ -1,0 +1,34 @@
+{
+  "name": "open-spacelink",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.1.13",
+    "@octokit/rest": "github:octokit/rest.js",
+    "appwrite": "^13.0.0",
+    "axios": "^1.5.1",
+    "axios-batch": "^0.0.8",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "encoding": "^0.1.13",
+    "framer-motion": "^10.16.4",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}
