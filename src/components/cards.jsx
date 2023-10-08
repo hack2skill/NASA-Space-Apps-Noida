@@ -21,19 +21,19 @@ export function RepoCards() {
   useEffect(() => {
     const fetchRepos = async () => {
       setIsLoading(true);
-      // const accessToken = await sdk.getProviderAccessToken();
+      const accessToken = await sdk.getProviderAccessToken();
       const repos = await axios({
         url: "https://api.github.com/orgs/nasa/repos",
         method: "GET",
-        // headers: {
-        //   Authorization: `token ${accessToken}`,
-        // },
+        headers: {
+          Authorization: `token ${accessToken}`,
+        },
       });
 
       // select only first 18 repos
-      const filteredRepos = await repos.data.splice(0, 18).map(async (repo) => {
+      const filteredRepos = await repos.data.splice(0, 20).map(async (repo) => {
         try {
-          const languages = await fetchLanguages(repo);
+          const languages = await fetchLanguages(repo, accessToken);
           return {
             name: repo.name,
             description: repo.description,
@@ -72,9 +72,9 @@ export function RepoCards() {
     const languages = await axios({
       url: `https://api.github.com/repos/${repo.full_name}/languages`,
       method: "GET",
-      // headers: {
-      //   Authorization: `token ${accessToken}`,
-      // },
+      headers: {
+        Authorization: `token ${accessToken}`,
+      },
     });
 
     return languages.data;
@@ -86,7 +86,7 @@ export function RepoCards() {
       <div className="grid grid-cols-3 gap-3">
         {repos &&
           repos.map((repo, i) => (
-            <Link href={`/home/repo/${repo.owner}__${repo.name}`} key={i}>
+            <Link href={`/repo/${repo.owner}`} key={i}>
               <Card key={i}>
                 {/* TODO: Add Repo Name */}
                 <CardHeader title={repo.name} />
@@ -133,19 +133,19 @@ export function UserRepoCards() {
   useEffect(() => {
     const fetchRepos = async () => {
       setIsLoading(true);
-      // const accessToken = await sdk.getProviderAccessToken();
+      const accessToken = await sdk.getProviderAccessToken();
       const repos = await axios({
         url: "https://api.github.com/orgs/nasa/repos",
         method: "GET",
-        // headers: {
-        //   Authorization: `token ${accessToken}`,
-        // },
+        headers: {
+          Authorization: `token ${accessToken}`,
+        },
       });
 
       // select only first 18 repos
-      const filteredRepos = await repos.data.splice(0, 5).map(async (repo) => {
+      const filteredRepos = await repos.data.splice(0, 20).map(async (repo) => {
         try {
-          const languages = await fetchLanguages(repo);
+          const languages = await fetchLanguages(repo, accessToken);
           return {
             name: repo.name,
             full_name: repo.full_name,
@@ -184,9 +184,9 @@ export function UserRepoCards() {
     const languages = await axios({
       url: `https://api.github.com/repos/${repo.full_name}/languages`,
       method: "GET",
-      // headers: {
-      //   Authorization: `token ${accessToken}`,
-      // },
+      headers: {
+        Authorization: `token ${accessToken}`,
+      },
     });
 
     return languages.data;
@@ -197,7 +197,7 @@ export function UserRepoCards() {
       <div className="grid grid-cols-2 gap-3 col-span-2">
         {repos &&
           repos.map((repo, i) => (
-            <Link href={`/home/repo/${repo.owner}__${repo.name}`} key={i}>
+            <Link href={`/repo/${repo.owner}`} key={i}>
               <Card key={i}>
                 {/* TODO: Add Repo Name */}
                 <CardHeader title="Repo Name" />
