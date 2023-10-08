@@ -1,32 +1,19 @@
 # NASA Space Apps Noida Hackathon 2023 - Hack2Skill
 
-Welcome to the official repository for the NASA Space Apps Noida Hackathon 2023 organized by Hack2Skill!
+#### Team Name - Coding Triad
+#### Problem Statement - Eclipse - Perspective is Everything
+#### Team Leader Email - shantanutiwari240704@gmail.com
 
-## Getting Started
-
-To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow these steps:
-
-### Submission Instruction:
-  1. Fork this repository
-  2. Create a folder with your Team Name
-  3. Upload all the code and necessary files in the created folder
-  4. Upload a **README.md** file in your folder with the below mentioned informations.
-  5. Generate a Pull Request with your Team Name. (Example: submission-XYZ_team)
-
-### README.md must consist of the following information:
-
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
-
-### A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
+### A Brief of the Prototype: We made an interactive website that depicts the phenomena of Eclipse and how it occurs. We included an interactive quiz, stories and history with some mythological references. We also made sure to include safety measures and concerns people should have. We will be taking this as our personal project and developing it further on our githup repo.
   
 ### Tech Stack: 
-   List Down all technologies used to Build the prototype
+   HTML, CSS, Javascript
    
 ### Step-by-Step Code Execution Instructions:
-  This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
+  1. Fork this repository
+  2. Use git bash to clone this on your local machine
+  3. Run it using an ide or a code editor
   
 ### Future Scope:
-   Write about the scalability and futuristic aspects of the prototype developed
+   We are considering adding affiliate links for safety equipments and we are going to start a newsletter regarding the moon and its science. 
+   I think we can have a good scalability if we handle it well and give it the right direction.
