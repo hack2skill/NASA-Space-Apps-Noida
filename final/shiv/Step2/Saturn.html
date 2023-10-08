@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom</title>
+    <style>
+
+        body{
+            background-image: url(../Images/backgif.gif);
+        }
+        .image-container {
+            position: relative;
+            width: 300px; /* Adjust the width and height as needed */
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: zoom 5s ease infinite alternate; /* Adjust the animation properties as needed */
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(0.2);
+            }
+            100% {
+                transform: scale(1); /* Adjust the scaling factor for zoom level */
+            }
+        }
+
+        #left{
+            /* border: 2px solid gray; */
+            height: 550px;
+            width: 700px;
+            float: left;
+
+        }
+
+        #right{
+            /* border: 2px solid gray; */
+            height: 500px;
+            width: 500px;
+            float: right;
+
+        }
+
+        #details{
+            /* border: 2px solid red; */
+            display: inline-block;
+            float: right;
+        }
+
+        .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  
+  transition: background-color 0.1s ease; 
+}
+#content{
+            color: white;
+            font-size: 25px;
+        }
+
+/* Button hover effect */
+.button:hover {
+  background-color:rgb(89, 0, 255);
+  font-size: 17px; 
+}
+
+
+.button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#top{
+    /* border: 1px solid red; */
+    height:500px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="left">
+        <div id="top">
+            <h3 id="inh">FACTS TO KNOW</h3>
+            <p ><ol>
+                <li id="content">Temperature:
+                    Saturn is an extremely cold planet in its upper atmosphere, with temperatures dropping as low as -178 degrees Celsius 
+                    </li>
+                <li id="content">At the core, it is estimated to be around 11,700 degrees Celsius (21,000 degrees Fahrenheit).</li>
+                <li id="content">Physical Characteristics:
+                Size and Composition: Saturn is the sixth planet from the Sun and is the second-largest planet in our solar system, after Jupiter. </li>
+                <li id="content">Cassini-Huygens Mission:
+
+                    NASA's Cassini spacecraft, in collaboration with the European Space Agency (ESA) and the Italian Space Agency (ASI), conducted an extensive mission to study Saturn and its moons.</li>
+            </ol></p>
+        </div>
+
+
+     <div id="details">
+        <a href="../Short registration/registration.html"><button class="button">visit here &rarr;</button></a>
+     </div>
+
+    </div>
+
+    <div id="right" class="image-container">
+        <img src="../Images/Saturn.png" alt="Zoomable Image">
+    </div>
+
+</body>
+</html>

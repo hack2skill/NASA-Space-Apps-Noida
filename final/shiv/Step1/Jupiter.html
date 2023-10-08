@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Zoom Out</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+
+        body{
+            background-image: url(../Images/backgif.gif);
+           
+        }
+        #right{
+            float: right;
+            width: 50%;
+           
+            height: 550px;
+            /* border: 1px solid red; */
+            /* background-image: url(../Images/backhd.jpg); */
+            background-size: 650px 550px;
+
+        }
+        #frame{
+            height: 550px;
+            width: 645px;
+            /* border: 2px solid black; */
+        }
+
+        #left{
+            
+            width: 50%;
+            
+            height: 550px;
+            /* border: 1px solid black; */
+            /* background-image: url("../Images/backhd.jpg"); */
+            background-size: 650px 550px;
+
+        }
+
+        #planate{
+            /* border: 1px solid red; */
+
+            
+            
+        }
+
+        #down{
+            /* border: 2px solid red; */
+            height: 300px;
+        }
+
+        #submit{
+            /* border: 2px solid red; */
+            height: 40px;
+
+        }
+
+        /* Basic button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  transition: background-color 0.1s ease; 
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color:rgb(89, 0, 255);
+  font-size: 17px; 
+}
+
+
+.button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+        h1{
+           
+            text-align: center;
+            font-size: 140px;
+            color: white;
+            margin: auto;
+        }
+        h3{
+            background-color: #007bff;
+            display: inline;
+            text-align: center;
+        }
+
+        #img{
+            height: 580px;
+            
+        }
+
+        #content{
+            color:white;
+            font-size: 30px;
+        }
+
+        #inh{
+            margin-left: 230px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="right">
+            <div >
+                <img id ="img" src="../Images/Jupiter.png" alt="">
+            
+            </div>
+
+
+
+        </div>
+
+        <div id="left">
+            <div id="planate">
+                <h1>JUPITER</h1>
+            </div>
+
+            <div id="down">
+
+                <h3 id="inh">FACTS TO KNOW</h3>
+                <ol>
+                    <li id="content">Jupiter is a gas giant and doesn't have a solid surface</li>
+                    <li id="content">Jupiter is covered in swirling cloud stripes.</li>
+                    <li id="content"> Jupiter has big storms like the Great Red Spot, which has been going for hundreds of years.</li>
+                    <li id="content">Jupiter has a solid inner core about the size of Earth.</li>
+                </ol>
+
+            </div>
+
+            <div id="submit">
+               <a href="../Step2/Jupiter.html"><button class="button">Know More &rarr;</button></a> 
+                
+            </div>
+           
+
+
+
+        </div>
+    </div>
+</body>
+</html>

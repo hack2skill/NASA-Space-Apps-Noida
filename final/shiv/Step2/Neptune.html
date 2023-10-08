@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom</title>
+    <style>
+
+        body{
+            background-image: url(../Images/backgif.gif);
+        }
+        .image-container {
+            position: relative;
+            width: 300px; /* Adjust the width and height as needed */
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: zoom 5s ease infinite alternate; /* Adjust the animation properties as needed */
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(0.2);
+            }
+            100% {
+                transform: scale(1); /* Adjust the scaling factor for zoom level */
+            }
+        }
+
+        #left{
+            /* border: 2px solid gray; */
+            height: 550px;
+            width: 700px;
+            float: left;
+
+        }
+
+        #right{
+            /* border: 2px solid gray; */
+            height: 500px;
+            width: 500px;
+            float: right;
+
+        }
+
+        #details{
+            /* border: 2px solid red; */
+            display: inline-block;
+            float: right;
+        }
+
+        .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  
+  transition: background-color 0.1s ease; 
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color:rgb(89, 0, 255);
+  font-size: 17px; 
+}
+
+
+.button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#top{
+    /* border: 1px solid red; */
+    height:500px;
+}
+#content{
+            color: white;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="left">
+        <div id="top">
+            <h3 id="inh">MORE FATCS TO KNOW</h3>
+                <ol>
+                   
+                            <li id="content">Discovery and Observation:
+
+                                Neptune was the first planet to be discovered through mathematical predictions rather than direct observation. </li>
+                            <li id="content">Atmosphere and Weather:
+
+                                Neptune's atmosphere is known for its dynamic and turbulent weather patterns. It experiences high-speed winds that can reach up to 1,200 miles per hour (1,930 kilometers per hour) in its equatorial region.</li>
+                            
+                            <li id="content">Extreme Cold and Distance:
+
+                                Neptune is extremely cold due to its great distance from the Sun. Its average temperature hovers around -330 degrees Fahrenheit (-201 degrees Celsius).</li>
+                            <li id="content">Exploration:
+
+                                The only spacecraft to visit Neptune up close is NASA's Voyager 2, which passed by the planet in 1989. Voyager 2 provided valuable data about Neptune's atmosphere, rings, and moons.</li>
+                    </ol>
+
+        </div>
+
+
+     <div id="details">
+        <a href="../Short registration/registration.html"><button class="button">visit here &rarr;</button></a>
+     </div>
+
+    </div>
+
+    <div id="right" class="image-container">
+        <img src="../Images/Neptune.png" alt="Zoomable Image">
+    </div>
+
+</body>
+</html>

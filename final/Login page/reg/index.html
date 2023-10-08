@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="agency detail">
+                    <span class="title">Passenger Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name:</label>
+                            <input id="Aname"type="text" placeholder="Enter the name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Country of Origin:</label>
+                            <input id="Contry"type="text" placeholder="Country" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email ID:</label>
+                            <input id="Email"type="text" placeholder="Enter the email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Contact Number</label>
+                            <input id="Cnum"type="number" placeholder="Enter contact number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Prefered Space Agency: </label>
+                            <select id="SpaceAgent"required>
+                                <option disabled selected>Select one</option>
+                                <option>European Space Agency</option>
+                                <option>National Aeronautics and Space Administration (NASA)</option>
+                                <option>Indian Space Research Organisation(ISRO)</option>
+                                <option>Roscosmos</option>
+                                <option>China National Space Administration</option>
+                                <option>Japan Aerospace Exploration Agency</option>
+                                <option>Italian Space Agency</option>
+                                <option>Other</option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Prefered Launchpad:</label>
+                            <select id="Launch"required>
+                                <option disabled selected>Select one</option>
+                                <option>Europe</option>
+                                <option>USA</option>
+                                <option>India</option>
+                                <option>Russia</option>
+                                <option>China</option>
+                                <option>Japan</option>
+                                <option>Italy</option>
+                                <option>Other</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Travelling ID">
+                    <span class="title">Travelling ID</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input id="IDtype"type="text" placeholder="Enter ID type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input id="IDnum"type="number" placeholder="Enter Unique ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input id="IssuAuth"type="text" placeholder="Enter govenment" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued State</label>
+                            <input id="IssuState"type="text" placeholder="Country" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input id="IssuDate"type="date" placeholder="Enter your issued date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input id="ExpDate"type="date" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+
+                    <button id="nxtbtn"class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Location</label>
+                            <input id="typeRU"type="text" placeholder="Rural or Urban" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input id="State" type="text" placeholder="Enter Your State" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input id="Dist" type="text" placeholder="Enter your Distirct" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pincode</label>
+                            <input id="PIN"type="number" placeholder="Enter the Pincode" required>
+                        </div>
+
+                        
+                </div>
+
+                <div class="details team">
+                    <span class="title">Package details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Total number of Travellers</label>
+                            <input id="totalnum"type="number" placeholder="Team Strength" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Team lead</label>
+                            <input id="Lead"type="text" placeholder="Lead name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Capacity of refugee</label>
+                            <input id="refugee"type="number" placeholder="Average Capacity" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Rescue vehicals</label>
+                            <input id="vehical"type="text" placeholder="Name along with its quantity" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Availability of Medical team</label>
+                            <input id="Meds" type="text" placeholder="Yes or No" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Status</label>
+                            <input id="status"type="text" placeholder="Active or Inactive" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button id="btn" type="submit"  class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+      import { getDatabase, ref, set, child } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCpKF02ytbHFjPohdov4bli3sFWF8oePdE",
+        authDomain: "project-relief.firebaseapp.com",
+        databaseURL: "https://project-relief-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "project-relief",
+        storageBucket: "project-relief.appspot.com",
+        messagingSenderId: "268986404948",
+        appId: "1:268986404948:web:4678240c3b25a6e4e21dc1",
+        measurementId: "G-EYLNCHW4FR"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const auth = getAuth();
+
+
+
+    document.getElementById("btn").addEventListener("click",function(e)
+
+    {
+        e.preventDefault();
+        var email=document.getElementById("Email").value;
+        var password=document.getElementById("Aname").value+"@"+document.getElementById("IDnum").value;
+
+
+        //Creating authentication for the users
+        createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+    // ..
+  });
+
+ 
+        set(ref(db, 'Rescue_Relief_Agency/' +document.getElementById("IDnum").value),
+        
+        {
+            AgencyName: document.getElementById("Aname").value,
+            DateOfEstablishment:  document.getElementById("Edate").value,
+            OfficialEmail:  document.getElementById("Email").value,
+            ContactNumber:  document.getElementById("Cnum").value,
+            RescueType:  document.getElementById("TypeRR").value,
+            AgencyAdministrator: document.getElementById("Aadmin").value,
+            IDType:document.getElementById("IDtype").value,
+            IDNumber:document.getElementById("IDnum").value,
+            IssueAuthority:document.getElementById("IssuAuth").value,
+            IssueState:document.getElementById("IssuState").value,
+            IssueDate:document.getElementById("IssuDate").value,
+            ExpiryDate:document.getElementById("ExpDate").value,
+            Password:password,
+        });
+        set(ref(db,'Rescue_Relief_Agency/Address/' +document.getElementById("IDnum").value),
+        {
+            AddressLocation:document.getElementById("typeRU").value,
+            State:document.getElementById("State").value,
+            DIst:document.getElementById("Dist").value,
+            Pincode:document.getElementById("PIN").value,
+            Latitudes:document.getElementById("Lati").value,
+            Longitutdes:document.getElementById("Longi").value,
+        });
+        set(ref(db,'Rescue_Relief_Agency/Information/' +document.getElementById("IDnum").value),
+        {
+            MemberNumber:document.getElementById("totalnum").value,
+            TeamLead:document.getElementById("Lead").value,
+            RefugeeCapacity:document.getElementById("refugee").value,
+            Vehical:document.getElementById("vehical").value,
+            Meds:document.getElementById("Meds").value,
+            Status:document.getElementById("status").value,
+        });
+        
+        
+        alert("Registered successfully");
+        alert("Your Password is"+password);
+
+    })
+    
+    
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

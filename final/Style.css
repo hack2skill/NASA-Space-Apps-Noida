@@ -1,0 +1,479 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: #5FB6D9;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 12vh;
+      background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+      z-index: 9999;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #295073;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+/*section1 image css*/
+
+.image1 img{
+      width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/*scroller section css*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+
+.slider {
+  height: 102px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Set the slider width to 100% */
+  margin-top: -3px;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite; /* Corrected the animation name to "scroll" */
+  display: flex;
+  width: calc(250px * 16);
+}
+
+.slider .slide {
+  height: 105px;
+    width: 250px;
+    background-color: white;/* Add a background color for visualization */
+                              /* Add a border for visualization */
+}
+
+.section2 {
+      margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*  height: 100vh; /* Set the body height to occupy the entire viewport height */*/
+/*  margin: 0; /* Remove default margin */*/
+/*  background-image:url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');*/
+}
+
+
+/*section-3 detail section css */
+
+      
+      *,*:after,:before{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+
+.section3 {
+font-family: arial;
+ font-size: 16px;
+ margin:0;
+background: #34aff3;
+display: flex;
+align-items: center;
+justify-content: space-around;
+min-height: 100vh;
+}
+img{
+max-width: 100%;
+display: block;
+}
+.pic{
+      width: 450px;
+      background: radial-gradient(#111 50%,#000 100%);
+      overflow: hidden;
+      position:relative;
+      border-radius: 50%;
+
+}
+.pic img{
+      transform: scale(1.3);
+      transition: all 0.3s ease-out;
+}
+.pic:hover img{
+      transform:scale(1.1) translateY(-20px);
+      opacity: 0.3;     
+}
+
+.text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+
+}
+
+.text h2{
+      font-weight:700;
+      font-size: 32px;
+      margin: 0 0 20px;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.3s ease-out 0.2s;*/
+}
+.text p{
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.3s ease-out;
+}
+.text a{
+      color: #fff;
+      background: #34aff3;
+      display: inline-block;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 5px;     
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.3s ease-out 0.4s;
+}
+.text a:hover{
+      background: #0e6290;
+}
+.pic:hover .text h2{
+      opacity: 1;
+      transform: translateY(0);
+}
+.pic:hover .text p{
+      opacity: 1;
+      transform: translateY(0);
+}
+.pic:hover .text a{
+      opacity: 1;
+      transform: translateY(0);
+}
+
+
+
+/*footer section CSS*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #eaf0f2;
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 300px;
+    font-size: 35px;
+}
+
+header h2 {
+    color: #f0525f;
+}
+
+header span {
+    color: #eaa03f;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+
+
+
+
+
+
+
+
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
