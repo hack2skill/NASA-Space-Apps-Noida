@@ -16,6 +16,12 @@ The project integrates with the NASA API to provide real-time data about the pla
 
 With the inclusion of 3D models, CSS, HTML, and generative AI techniques, the website creates an immersive experience that sparks curiosity and allows users to gain knowledge about space exploration.
 ## ScreenShots
+![Alt text](images/1.png)
+![Alt text](images/2.png)
+![Alt text](images/3.png)
+![Alt text](images/4.png)
+![Alt text](images/5.png)
+![Alt text](images/6.png)
 
 ## Technologies Used
 
