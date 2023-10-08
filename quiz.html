@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            background-color: #007ACC;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left; /* Align text to the left */
+        }
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-left: 0; /* Remove left margin for options */
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007ACC;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #005D9D;
+        }
+        /* Add margin between questions */
+        .question + .question {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Application</h1>
+    <div class="container">
+        <form>
+            <div class="question">
+                Q1. What role do oceans play in stabilizing the Earth's climate?
+            </div>
+            <div class="options">
+                <input type="radio" name="question1"> Oceans act as a giant air conditioner<br>
+                <input type="radio" name="question1" id="correct1"> Oceans store and distribute heat, helping regulate global temperatures<br>
+                <input type="radio" name="question1"> Oceans generate electricity to power climate control systems<br>
+                <input type="radio" name="question1"> Oceans create hurricanes that cool the planet<br>
+            </div>
+
+            <div class="question">
+                Q2. How do oceans influence weather patterns?
+            </div>
+            <div class="options">
+                <input type="radio" name="question2"> Oceans control weather through magic.<br>
+                <input type="radio" name="question2" id="correct2"> Oceans release moisture into the atmosphere through evaporation, affecting weather.<br>
+                <input type="radio" name="question2"> Oceans have no impact on weather patterns.<br>
+                <input type="radio" name="question2"> Oceans create weather patterns with underwater storms.<br>
+            </div>
+            
+<div class="question">
+Q3.What process in the oceans helps combat global warming by absorbing carbon dioxide<br>
+</div>
+<div class="options">
+<input type="radio"name="question3"id="correct3">Oceanic photosynthesis.<br>
+<input type="radio"name="question3">Carbon emission from marine animals.<br>
+<input type="radio"name="question3">Oceans create CO2, exacerbating global warming.<br>
+<input type="radio"name="question3">Ocean currents release CO2 into the atmosphere.<br>
+</div>
+<div class="question">
+Q4.Which marine organisms are responsible for producing a significant portion of the world's oxygen?<br>
+</div>
+<div class="options">
+<input type="radio"name="question4">Dolphins and whales.<br>
+<input type="radio"name="question4"> Seashells and coral reefs.<br>
+<input type="radio"name="question4"id="correct4">Phytoplankton and marine plants.<br>
+<input type="radio"name="question4">Seagulls and pelicans.<br>
+</div>
+<div class="question">
+Q5.Oceans provide a critical source of food for billions of people through?<br>
+</div>
+<div class="options">
+<input type="radio"name="question5">Volcanic eruptions.<br>
+<input type="radio"name="question5">Harvesting seaweed.<br>
+<input type="radio"name="question5"id="correct5">Seafood, including fish and shellfish.<br>
+<input type="radio"name="question5">Underwater farming.<br>
+</div>
+<div class="question">
+Q6.What term describes the vast array of species living in the oceans?
+</div>
+<div class="options">
+<input type="radio"name="question6"><input type="radio"name="question3">Volcanic eruptions.<br><br>
+<input type="radio"name="question6">Terrestrial biodiversity.<br>
+<input type="radio"name="question6"id="correct6">Marine diversity.<br>
+<input type="radio"name="question6">Desertification<br>
+</div>
+<div class="question">
+Q7.How do oceans contribute to nutrient cycling?<br>
+</div>
+<div class="options">
+<input type="radio"name="question7">Oceans produce excess nutrients that are harmful.<br>
+<input type="radio"name="question7"> Oceans do not play a role in nutrient cycling.<br>
+<input type="radio"name="question7"id="correct7">Oceans cycle essential nutrients through marine ecosystems<br>
+<input type="radio"name="question7">Oceans export nutrients to space.<br>
+</div>
+<div class="question">
+Q8.Which economic activity is promoted by oceans through activities like swimming and scuba diving?
+</div>
+<div class="options">
+<input type="radio"name="question8">Agriculture.<br>
+<input type="radio"name="question8">Forestry.<br>
+<input type="radio"name="question8"id="correct8">Tourism.<br>
+<input type="radio"name="question8">Manufacturing.<br>
+</div>
+<div class="question">
+Q 9.Oceans serve as major transportation routes for global trade, contributing to which aspect of the economy?
+</div>
+<div class="options">
+<input type="radio"name="question9">Healthcare.<br>
+<input type="radio"name="question9">Technology.<br>
+<input type="radio"name="question9">Education.<br>
+<input type="radio"name="question9"id="correct9">Global economy.<br>
+<div class="question">
+Q 10.What valuable resource do oceans provide for scientific research?
+</div>
+<div class="options">
+<input type="radio"name="question10">Fossil fuels.<br>
+<input type="radio"name="question10">Space exploration.<br>
+<input type="radio"name="question10"id="correct10"> Insights into climate change and marine life.<br>
+<input type="radio"name="question10">Medicinal plants.<br>
+</div>
+<div class="question">
+Q 11.Oceans hold cultural and spiritual significance for many societies, with numerous traditions, stories, and rituals associated with them. This aspect of oceans highlights their:?
+</div>
+<div class="options">
+<input type="radio"name="question11">Historical irrelevance.<br>
+<input type="radio"name="question11"id="correct11">Economic potential.<br>
+<input type="radio"name="question11"> Cultural and spiritual importance.<br>
+<input type="radio"name="question11">Role in geological processes.<br>
+</div>
+<div class="question">
+Q 12.How do oceans enhance human well-being and promote a connection to nature?
+</div>
+
+<div class="options">
+<input type="radio"name="question12">By creating deserts and dry landscapes.<br>
+<input type="radio"name="question12"> By causing natural disasters.<br>
+<input type="radio"name="question12"id="correct12">Through their scenic beauty and recreational opportunities.<br>
+<input type="radio"name="question12">By facilitating air travel.<br>
+</div>
+            <input type="submit" name="submit" value="Submit Quiz" onclick="result()">
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if(document.getElementById('correct2').checked)
+    {
+       score++;
+    }
+    
+        if(document.getElementById('correct3').checked)
+    {
+        score++;
+    }
+    if(document.getElementById('correct4').checked)
+    {
+        score++; 
+    }
+    if(document.getElementById('correct5').checked)
+    {
+       score++;
+    }
+    
+        if(document.getElementById('correct6').checked)
+    {
+        score++;
+    }
+    if(document.getElementById('correct7').checked)
+    {
+        score++; 
+    }
+    if(document.getElementById('correct8').checked)
+    {
+       score++;
+    }
+    
+        if(document.getElementById('correct9').checked)
+    {
+        score++;
+    }
+    if(document.getElementById('correct10').checked)
+    {
+        score++; 
+    }
+    if(document.getElementById('correct11').checked)
+    {
+       score++;
+    }
+    
+        if(document.getElementById('correct12').checked)
+    {
+        score++;
+    }
+    document.write("Your score is:"+score);
+    }
+         
+    </script>
+</body>
+</html>
