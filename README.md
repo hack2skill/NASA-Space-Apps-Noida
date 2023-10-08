@@ -9,13 +9,13 @@
 ![ezgif com-video-to-gif](https://github.com/mediachain/mediachain-website/assets/72219613/2b06670b-55a9-43c3-a06a-2f6f16d3d4fd)
 
 
-Our Prototype "HYDRA HEALTH" Front Page
+## Our Prototype "HYDRA HEALTH" Front Page
 
 
  ![WhatsApp Image 2023-10-08 at 4 59 30 AM](https://github.com/mediachain/mediachain-website/assets/72219613/8863abdf-d0c3-4a27-be7f-8394876d8191)
 ### Our app first takes user's location using geoloaction module of js.
 
- Then Fetches Longitude and Latitude of the User. And finds water bodies under the radius of 5km. 
+ ## Then Fetches Longitude and Latitude of the User. And finds water bodies under the radius of 5km. 
 
 
 
