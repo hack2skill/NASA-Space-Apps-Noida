@@ -1,0 +1,26 @@
+
+newmtl Weapons
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.1 0.1 0.1
+d  1.0
+Ns  150.0
+illum 2
+map_Kd Lightning_LP_Material_AlbedoTransparency.tga
+map_Bump Lightning_LP_Material_Normal.tga
+
+
+
+
+newmtl Body
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.1 0.1 0.1
+d  1.0
+Ns  150.0
+illum 2
+map_Kd Lightning_LP_Material.001_AlbedoTransparency.tga
+map_Bump Lightning_LP_Material.001_Normal.tga
+
+
+
