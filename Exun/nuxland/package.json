@@ -1,0 +1,29 @@
+{
+  "name": "base",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@huddle01/iframe": "^0.0.10",
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "axios": "^1.5.0",
+    "next": "12.3.0",
+    "next-auth": "^4.17.0",
+    "nextjs-progressbar": "^0.0.14",
+    "nodemailer": "^6.8.0",
+    "nprogress": "^0.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.1.3",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0"
+  }
+}

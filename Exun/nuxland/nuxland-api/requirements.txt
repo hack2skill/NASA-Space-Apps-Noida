@@ -1,0 +1,5 @@
+Flask==2.2.2
+pymongo==4.3.3
+websockets==11.0.3
+ngrok==0.9.0
+Werkzeug==2.2.2
