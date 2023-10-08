@@ -15,18 +15,29 @@ To get started with the NASA Space Apps Noida Hackathon 2023 repository, follow 
 
 ### README.md must consist of the following information:
 
-#### Team Name -
-#### Problem Statement - 
-#### Team Leader Email -
+#### Team Name -Binary Flux
+#### Problem Statement - In the distant future, space tourism will likely be routine for Earth dwellers, but space travelers will need help choosing a destination and determining an itinerary. Imagine you are a travel agent at a future space tourism office. Your challenge is to create a tool that will not only develop customized itineraries for future travelers who want to visit the main bodies in our solar system—perhaps Mars, Jupiter, or Saturn—but also educate present-day users about the many different objects in our solar system.
+#### Team Leader Email - rishustudent2001@gmail.com
 
 ### A Brief of the Prototype:
-  This section must include UML Diagrams and prototype description
+  It can be a helping tool for space agencies to send their astronauts in different planets as this website will estimate the total cost of landing them at desired planets.As well as it will let the agency know whether sending in a particular planet is a feasible move or not.
   
 ### Tech Stack: 
-   List Down all technologies used to Build the prototype
-   
+  1.Html5
+  2.Css
+  3.Javascript
+  4.Bootstrap
+  5.jquery
+  6.Firebase for database
+
+     
 ### Step-by-Step Code Execution Instructions:
-  This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
-  
+Step 1: Install a code editor such as VScode\Sublime.
+Step 2: Install a all the extension for html,css,javascript file.
+Step 3: Also install the live server(Optional).
+Step 4: Now Click on the GO Live Button ,present at the right bottom of your vscode screen.  
 ### Future Scope:
-   Write about the scalability and futuristic aspects of the prototype developed
+  1.We will be using data analysis tools to predict the total cost of tour,most suitable planet for human being to tour,best planet with presence of highest resources for human survival.
+  2.Will integrate NLP trained chatbot to be capable enough of resolving customer's query with least interaction with real agents.
+  3.Customer can get quick overview of available natural resource for exploring and doing adventurous/fun activities there.
+
