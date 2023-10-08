@@ -1,0 +1,30 @@
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+  background: #1f1f1f;
+}
+.App {
+  font-family: monospace, sans-serif;
+  text-align: center;
+  color: white;
+}
+footer {
+  font-family: monospace, sans-serif;
+  background: black;
+  color: white;
+  padding: 3em;
+  border-radius: 1em;
+  text-align: start;
+}
+footer a {
+  color: white;
+  font-size: 1.5em;
+  margin: 1em;
+  font-weight: bolder;
+}
+
+
+
