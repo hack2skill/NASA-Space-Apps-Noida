@@ -1,0 +1,68 @@
+{% extends 'flight/layout.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>Space Trek : Training</title>
+    <script type="text/javascript" src="{% static 'js/bookings.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/bookings_style.css' %}">
+{% endblock head %}
+
+{% block body %}
+    <section class="section section1">
+        <div class="container">
+            {% if trainings %}
+                {% for training in trainings %}
+                    <div class="row each-booking-div" id="{{training.ref_no}}">
+                        <div class="col-2" style="display: flex;">
+                            <div style="display: flex; color: #666666; margin-top: auto;">
+                                <div>
+                                    <span style="font-size: 2.1em;">{{training.course_sdate | date:"d"}}</span>
+                                </div>
+                                <div style="font-size: smaller; display: flex; margin: auto 0; padding-left: 5px; line-height: 1em;">
+                                    <div style="margin: auto;">
+                                        <div style="margin-bottom: 1px;">{{training.course_edate | date:"D"}}</div>
+                                        <div style="margin-top: 1px;">{{training.course_edate | date:"M'y"}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 middle-div">
+                            <div style="width:100%">
+                                <div class="row places-div" style=" display: flex;">
+                                    <div>&nbsp;-&nbsp;</div>
+                                    <div style="max-width: 45%;">{{training.ref_no}}</div>
+                                </div>
+                                    <div style="max-width: 45%;"><bold>{{training.desc}}</bold></div>
+
+                                {% comment %} <div class="row places-div" style="font-size: .8em; color: #999999; ">
+                                    <div style="max-width: 100%;">{{training.flight.airline}} &middot; {{training.flight.plane}} &middot; {{ticket.passengers.count}} </div>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="col-2 middle-div">
+                            <!-- <div style="font-size: 1.2em; color: #945937;">{{ticket.ref_no}}</div> -->
+                            <img src="{% static 'img/icon.png'%}">
+                        </div>
+                        
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div style="height: 100%; width:100%; padding: 10%;">
+                    <div style="text-align: center; margin: auto;">
+                        <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-exclamation-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                        </svg>
+                        <br><br>
+                        <h3>Oops! Looks empty</h3>
+                        <p>
+                            Looks like we don't have any Training yet.
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+    
+{% endblock %}
