@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.video{
+    position:relative;
+    margin-top:30px;
+}
+.title{
+    text-align: center;
+    position: absolute;
+    bottom: 250px;
+    
+}
+.title-text{
+    font-size: 40px;
+    text-align: center;
+}
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+}
+
+/*header*/
+.header{
+   /* display: flex;*/
+    min-height: 100vh;
+     background:linear-gradient(rgba(0,0,0,0.8),rgb(0,0,0,0.8)),
+    center no-repeat fixed;
+    /* flex-direction: column;*/
+    margin-top: auto; 
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.hero .title{
+    color: #fff;
+    font-size: 50px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color:#fff;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-top:10px;
+  
+}
+.hero-button:hover{
+    background: #fff;
+    color: orange;
+    border: none;
+    
+
+}
+.pulsate{
+    /*-webkit-*/animation: pulsate 3s ease-in-out;
+    /*-webkit-*/animation-iteration-count:infinite ;
+    opacity: .3;
+    color: black;
+    position:absolute;
+    bottom: 90px;
+}
+@-webkit-keyframes pulsate{
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
+
+}
+
+.quiz-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 55px;
+    font-weight: bold;
+    background: orange;
+    color:#fff;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-top:10px;
+    position: relative;
+    right: -490px;
+    top: -550px;
+  
+}
+.quiz-button:hover{
+    background: #fff;
+    color: orange;
+    border: none;
+    
+
+}
+
+
+/* End of header*/
+/*==========About Section============*/
+#about{
+    padding: 40px;
+}
+
+.about{
+    margin: 30px 0;
+    display: flex;
+}
+.about-icon .fas{
+    font-size: 60px;
+    color: orange;
+    margin-right: 20px;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+}
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+ transition: transform 2s ease, color 2s ease;
+ transform: translateY(-10px);
+    color: #cd6100;
+    cursor: pointer;
+}
+@media screen and (min-width: 576px){
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+@media screen and (min-width:972px){
+    .about{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+}
+/*=====end of Icon Section======*/
+/*=====Menu Section======*/
+.menu-image{
+    min-height: 80vh;
+    background: url(https://gpm.nasa.gov/education/sites/default/files/article_images/Water-Cycle-Art2A.png)center/cover fixed no-repeat;
+}
+.menu-text{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background:rgba(0,0,0,0.4);
+    columns: #0000;
+    padding: 40px 0;
+}
+.menu-text-center{
+    width: 90%;
+    margin: 0 auto;
+}
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2;
+}
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: rgb(10, 10, 10);
+    color:orange;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-top:10px;
+}
+.menu-text a:hover{
+    color:orange;
+    background: #fff;
+    border:none;
+
+}
+@media screen and (min-width:776px){
+    .menu{
+        display: flex;
+    }
+    .menu-text{
+        flex: 0 0 30%;
+    }
+    .menu-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%)
+    }
+    .menu{
+        background:black;
+        color:white;
+    }
+}
+/*========End of Menu Section====*/
+
+
+/*==========Social Icons====*/
+
+#social-icons{
+ height: 150px;
+   background:#fff;
+    text-align: center;
+   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);*/
+    padding: 50px 0 50px 0;
+}
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius:5px;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+  color:  #38A1F3;
+}
+.instagram{
+ color:   #e1306c;
+}
+.plus{
+    color:#db4a39;
+}
+/*====end of Social Icons======*/
+/*==========Numbers/ Counters=======*/
+.number{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+     url(https://gpm.nasa.gov/education/sites/default/files/article_images/Water-Cycle-Art2A.png) center/cover fixed no-repeat;
+    padding: 60px 0;
+    color:#fff;
+    height: 300px;
+ }
+ .number p{
+     font-size: 30px;
+     font-weight: bold;
+ }
+.number:hover{
+    color: orange;
+}
+.number .fas{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.number h3{
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:576PX){
+    #numbers {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px){
+    #numbers{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*==========Cards Section========*/
+#food{
+    padding: 20px ;
+    background-color: black;
+    color: white;
+}
+.food-container{
+     max-width: 90vw;
+    margin: 0 auto;
+}
+.food-card{
+    position: relative;
+    background: linear-gradient(rgba(205, 96, 0, 0.7),rgba(205,96,0,0.7));
+    margin:20px 0;
+    color: #000;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 16px;
+    border: 1px solid orange;
+    box-shadow: 2px 3px 1px 1px #cd6100;
+    z-index: 1;
+}
+
+#food img{
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 4s;
+}
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+
+}
+.img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    color: #000;
+    transition: opacity 4s;
+}
+.img-text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.food-card:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+}
+.food-card:hover .img-text,
+.food-card:hover  .img-footer{
+    opacity:1;
+}
+.food-btn{
+    display: inline-block;
+    background:#000;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12px 32px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 180px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    font-size:18px;
+    outline:none;
+}
+.food-btn:hover{
+    color: orange;
+    background:#ffff;
+    border: #000;
+    outline: none;
+}
+.fas{
+    font-size: 30px;
+}
+@media screen and (min-width: 576px){
+    .food-container{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-column-gap: 16px;
+    }
+}
+@media screen and (min-width: 992px){
+    .food-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap:16px ;
+    }
+}
+/*========End of Cards Section=======*/
+/*=========Gallery Section============*/
+#gallery{
+    padding: 40px;
+    background: #fff;
+}
+.gallery-item{
+    background: linear-gradient(rgb(rgba(241, 161, 13)) rgb(rgb(255, 165, 0)));
+}
+.gallery-item img{
+    display:block;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+.gallery-item img:hover{
+    opacity: 0.5;
+}
+@media screen and (min-width:576px){
+    #gallery-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:992px){
+    #gallery-center{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*==========Footer========*/
+.footer{
+    background:#000;
+    text-align: center;
+}
+.footer .text{
+text-transform: uppercase;
+color: #fff;
+font-size: 24px;
+margin-top: 20px;
+}
+
+#play_1{
+    height: 20px;
+    width: 40px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.button {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+    transition-duration: .2s;
+    right: 15px;
+  }
+  
+  .game path {
+    color: white;
+  }
+  
+  .button .arrow {
+    position: absolute;
+    right: 0;
+    padding: 0px 5px;
+    width: 30px;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: black;
+    transition-duration: .2s;
+  }
+  
+  .button:hover .arrow {
+    animation: slide-right .6s ease-out both;
+  }
+  /* arrow animation */
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-5px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .button:active {
+    transform: translate(1px , 1px);
+    transition-duration: .2s;
+  }
+
+#play_line{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #img1{
+    position:absolute;
+    margin:10 10 10 10;
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  .no-water{
+    background-color: black;
+    color:white;
+    
+  }
+  
