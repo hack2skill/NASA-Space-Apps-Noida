@@ -1,0 +1,119 @@
+body {
+    background-color: black;
+    overflow-y: scroll;
+    margin: 0;
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.logo-image{
+    img{float: left}
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+h1 {
+    color: white;
+    font-size: 200px;
+    font-family: "Space Mono", monospace;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar {
+    background: Gray;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+button {
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+button a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    margin-top: 57px; /* Adjust this margin to avoid content being hidden under the header */
+}
+p{
+    color: #dddddd;
+}
+.collapsible {
+    background-color: #444444;
+    color: #dddddd;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+h2{
+    background-color: #dddddd;
+}
