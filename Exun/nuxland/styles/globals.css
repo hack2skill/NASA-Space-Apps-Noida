@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html
+body {
+  background-image: url('../public/bg.png');
+  background-size: 200vh;
+  margin: 0;
+  font-family: 'Groteska', monospace;
+}
+
+.text {
+  font-family: "Montserrat", sans-seri
+}
+
+:root {
+  --toastify-icon-color-info: #006FEE !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical {
+  text-align: center;
+}
+
+.div {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+}
+
+.signinbtn {
+  height: 6vh;
+  width: 25vw;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 7px 0px 0px #9a9a9a;
+  color: black;
+}
+
+.scale_2 {
+  scale: 1.1;
+}
+
+.vertical1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.vertical3 {
+  text-align: center;
+}
+
+.dpsrkpimg {
+height: 2rem;
+width: auto;
+margin-right: 10px;
+}
+.admin {
+text-align: center;
+margin-top: 20px;
+}
+.edit-btn {
+font-size: 20px;
+padding: 20px;
+border-radius: 10px;
+margin-right: 20px;
+}
+.btn-div {
+margin-top: 20px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.hide {
+visibility: hidden;
+display: none;
+}
+.hidden {
+opacity: 0;
+filter: blur(5px);
+animation: show 0.5s forwards;
+}
+@keyframes show {
+0% {
+  opacity: 0;
+  scale: 0.95;
+  filter: blur(5px);
+}
+100% {
+  opacity: 1;
+  scale: 1;
+  filter: blur(0);
+}
+}
+@keyframes popin {
+0% {
+  opacity: 0;
+  scale: 0;
+  filter: blur(5px);
+}
+100% {
+  opacity: 1;
+  scale: 1;
+  filter: blur(0);
+}
+}
+@keyframes popout {
+0% {
+  opacity: 1;
+  scale: 1;
+  filter: blur(0);
+}
+100% {
+  opacity: 0;
+  scale: 0;
+  filter: blur(5px);
+}
+}
+@media(prefers-reduced-motion) {
+.hidden {
+  transition: none;
+}
+}
+@keyframes shake {
+10%, 90% {
+  transform: translate3d(-1px, 0, 0);
+}
+
+20%, 80% {
+  transform: translate3d(2px, 0, 0);
+}
+30%, 50%, 70% {
+  transform: translate3d(-4px, 0, 0);
+}
+40%, 60% {
+  transform: translate3d(4px, 0, 0);
+}
+}
+.div_center {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+z-index: 100;
+}
+.nextui-input-helper-text {
+font-size: 12px !important;
+}
+:root {
+--clr-neon: #209ce4;
+--clr-bg: hsl(323 21% 16%);
+--status: #209ce4;
+}
+.neon-button {
+display: inline-block;
+cursor: pointer;
+text-decoration: none;
+color: var(--clr-neon);
+border: var(--clr-neon) 0.125em solid;
+padding: 0.25em 1em;
+border-radius: 0.25em;
+position: relative;
+text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+scale: 0.8;
+}
+.glowtext {
+display: inline-block;
+color: #209ce4;
+padding: 0.25em 1em;
+text-shadow: 0 0 0.125em #209ce4, 0 0 0.45em currentColor;
+font-size: 7vh;
+}
+.glow {
+display: inline-block;
+color: #209ce4;
+border: #209ce4 0.125em solid;
+padding: 0.25em 1em;
+text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+box-shadow: inset 0 0 0.5em 0 #209ce4, 0 0 0.5em 0 #209ce4;
+border-radius: 1vh;
+opacity: 0;
+}
+.glow2 {
+pointer-events: none;
+content: "";
+transform: perspective(0.8em) rotateX(40deg) scale(1.2, 0.35);
+filter: blur(1em);
+opacity: 1;
+}
+.neon-button::before {
+pointer-events: none;
+content: "";
+position: absolute;
+background: var(--clr-neon);
+top: 120%;
+left: 0;
+width: 100%;
+height: 100%;
+transform: perspective(0.9em) rotateX(40deg) scale(1, 0.35);
+filter: blur(1em);
+opacity: 0.7;
+}
+
+@keyframes shadowshow {
+0% {
+  box-shadow: 0 0 0.75em 0 #209ce4, 0 0 0.1em 0 #209ce4;
+}
+100% {
+  box-shadow: 0 0 0.75em 0 #209ce4, 0 0 0.1em 0 #209ce4;
+}
+}
+@keyframes shadowhide {
+0% {
+  box-shadow: 0 0 1em 0 #209ce4, 0 0 0.1em 0 #209ce4;
+}
+100% {
+  box-shadow: 0 0 0.75em 0 #209ce4, 0 0 0.1em 0 #209ce4;
+}
+}
+@keyframes redshow {
+0% {
+  box-shadow: 0 0 0.75em 0 #209ce4, 0 0 0.1em 0 #209ce4;
+}
+50% {
+  box-shadow: 0 0 0.75em 0 #e42020, 0 0 0.1em 0 #e42020;
+}
+100% {
+  box-shadow: 0 0 0.75em 0 #209ce4, 0 0 0.1em 0 #209ce4;
+}
+}
+
+.shadow {
+  animation: shadowshow 0.3s forwards;
+}
+
+.shadow:hover {
+  animation: shadowshow 0.3s forwards;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover::after, .neon-button:focus::after {
+  opacity: 0.2;
+}
+
+::selection {
+  color: white;
+  background: #006FEE;
+}
+
+.Toastify__toast-container--top-right {
+  margin-top: 10vh;
+}
+
+.Toastify__progress-bar--info {
+  background-color: #006FEE !important;
+}
+
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Light.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Book.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Groteska";
+  src: url("../fonts/Groteska-Heavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
