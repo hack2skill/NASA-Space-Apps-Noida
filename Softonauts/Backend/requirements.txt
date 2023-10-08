@@ -1,0 +1,4 @@
+Flask==2.3.3
+jinja2
+pdfkit
+wkhtmltopdf
