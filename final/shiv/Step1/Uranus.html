@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Zoom Out</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+
+        body{
+            background-image: url(../Images/backgif.gif);
+           
+        }
+        #right{
+            float: right;
+            width: 50%;
+           
+            height: 550px;
+            /* border: 1px solid red; */
+            /* background-image: url(../Images/backhd.jpg); */
+            background-size: 650px 550px;
+
+        }
+        #frame{
+            height: 550px;
+            width: 645px;
+            /* border: 2px solid black; */
+        }
+
+        #left{
+            
+            width: 50%;
+            
+            height: 550px;
+            /* border: 1px solid black; */
+            /* background-image: url("../Images/backhd.jpg"); */
+            background-size: 650px 550px;
+
+        }
+
+        #planate{
+            /* border: 1px solid red; */
+
+            
+            
+        }
+
+        #down{
+            /* border: 2px solid red; */
+            height: 300px;
+        }
+
+        #submit{
+            /* border: 2px solid red; */
+            height: 40px;
+
+        }
+
+        /* Basic button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  transition: background-color 0.1s ease; 
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color:rgb(89, 0, 255);
+  font-size: 17px; 
+}
+
+
+.button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+        h1{
+           
+            text-align: center;
+            font-size: 150px;
+            color: white;
+            margin: auto;
+        }
+        h3{
+            background-color: #007bff;
+            display: inline;
+            text-align: center;
+        }
+
+        #img{
+            height: 580px;
+            
+        }
+        #content{
+            color:white;
+            font-size: 25px;
+        }
+
+        #inh{
+            margin-left: 230px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="right">
+            <div >
+                <img id ="img" src="../Images/Uranus.png" alt="">
+            
+            </div>
+
+
+
+        </div>
+
+        <div id="left">
+            <div id="planate">
+                <h1>URANUS</h1>
+            </div>
+
+            <div id="down">
+
+                <h3 id="inh">FACTS TO KNOW </h3>
+                <p ><ol>
+                    <li id="content">Uranus is not visible to the naked eye even though it is the third-largest planet in our solar system </li>
+                    <li id="content">Uranus is named after the Greek god of the sky, Ouranos or Uranus.</li>
+                    <li id="content"> The tilt of Uranus(23 degree.) may have been caused by a collision.</li>
+                    <li id="content">Uranus is icy and burning hot, with extreme seasons.</li>
+
+            </div>
+
+            <div id="submit">
+               <a href="../Step2/Uranus.html"><button class="button">Know More &rarr;</button></a> 
+                
+            </div>
+           
+
+
+
+        </div>
+    </div>
+</body>
+</html>

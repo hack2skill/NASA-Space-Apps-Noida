@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Zoom Out</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+
+        body{
+            background-image: url(../Images/backgif.gif);
+           
+        }
+        #right{
+            float: right;
+            width: 50%;
+           
+            height: 550px;
+            /* border: 1px solid red; */
+            /* background-image: url(../Images/backhd.jpg); */
+            background-size: 650px 550px;
+
+        }
+        #frame{
+            height: 550px;
+            width: 645px;
+            /* border: 2px solid black; */
+        }
+
+        #left{
+            
+            width: 50%;
+            
+            height: 550px;
+            /* border: 1px solid black; */
+            /* background-image: url("../Images/backhd.jpg"); */
+            background-size: 650px 550px;
+
+        }
+
+        #planate{
+            /* border: 1px solid red; */
+
+            
+            
+        }
+
+        #down{
+            /* border: 2px solid red; */
+            height: 300px;
+        }
+
+        #submit{
+            /* border: 2px solid red; */
+            height: 40px;
+
+        }
+
+        /* Basic button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  transition: background-color 0.1s ease; 
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color:rgb(89, 0, 255);
+  font-size: 17px; 
+}
+
+
+.button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+        h1{
+           
+            text-align: center;
+            font-size: 150px;
+            color: white;
+            margin: auto;
+        }
+        h3{
+            background-color: #007bff;
+            display: inline;
+            text-align: center;
+        }
+
+        #img{
+            height: 580px;
+            
+        }
+
+        #content{
+            color: white;
+            font-size: 25px;
+        }
+
+        #inh{
+            margin-left: 230px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="right">
+            <div >
+                <img id ="img" src="../Images/Mars.png" alt="">
+            
+            </div>
+
+
+
+        </div>
+
+        <div id="left">
+            <div id="planate">
+                <h1>Mars</h1>
+            </div>
+
+            <div id="down">
+
+                <h3 id="inh">FATCS TO KNOW</h3>
+                <ol>
+                    <li id="content">Average Distance from Sun is 93 miles</li>
+                    <li id="content">Named after the Roman God of war</li>
+                    <li id="content">Mars is the fourth planet as well as  the second smallest planet in the solar system.</li>
+                    <li id="content">Mars is titled as a red planet due to the iron oxide (rust) present in its rocks and soil.
+                    <li id="content"> It can get pretty cold on Mars, temperatures can reach 20°C, but at its poles they can plummet to as low as -140°C. </li>
+                    </ol>
+
+            </div>
+
+            <div id="submit">
+               <a href="../Step2/Mars.html"><button class="button">Know More &rarr;</button></a> 
+                
+            </div>
+           
+
+
+
+        </div>
+    </div>
+</body>
+</html>
